@@ -24,7 +24,7 @@ if [ "$USR" != "root" ]; then
 fi
 
 echo -e "${PREFIX} Downloading SunVox..."
-wget -q -O sunvox.zip https://warmplace.ru/soft/sunvox/sunvox-2.1c.zip
+wget -q -O sunvox.zip https://github.com/warmplace/sunvox/archive/refs/heads/master.zip
 echo -e "${PREFIX} Extracting SunVox..."
 unzip -q sunvox.zip -d . && rm sunvox.zip
 cd ./sunvox/sunvox
