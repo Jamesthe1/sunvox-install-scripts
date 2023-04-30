@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/usr/bin/sunvox/sunvox
+Name=SunVox
+Icon=/usr/bin/sunvox/icon.png
+Categories=Audio;Sound;Utilities
