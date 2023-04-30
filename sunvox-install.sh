@@ -46,4 +46,4 @@ else
 	$TOROOT $INSTALL_CMD
 	$TOROOT $ADD_DESKTOP
 fi
-echo -e "${PREFIX} Installation complete."
+echo -e "${PREFIX} Installation complete. You may move the leftover sunvox folder into your Documents, or elsewhere."
