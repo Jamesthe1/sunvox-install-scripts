@@ -28,10 +28,12 @@ wget -q -O sunvox.zip https://github.com/warmplace/sunvox/archive/refs/heads/mas
 echo -e "${PREFIX} Extracting SunVox..."
 unzip -q sunvox.zip -d . && rm sunvox.zip
 cd ./sunvox/sunvox
-ls . | grep -Po '^((?!linux_x86_64).)*$' | xargs rm -r
+echo -e "${PREFIX} Removing extras..."
+OS_ARCH=`uname -m`
+ls . | grep -Po "^((?\!linux_${OS_ARCH}).)*\$" | xargs rm -r
 echo -e "${PREFIX} Arranging files..."
 # Use wildcard because you cannot move a folder into its parent
-mv linux_x86_64/* . && rmdir ./linux_x86_64
+mv linux_$OS_ARCH/* . && rmdir ./linux_$OS_ARCH
 wget -q https://warmplace.ru/soft/sunvox/images/icon.png
 cd - > /dev/null
 
