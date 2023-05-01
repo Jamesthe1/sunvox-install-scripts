@@ -6,4 +6,4 @@ Terminal=false
 Exec=/usr/bin/sunvox/sunvox
 Name=SunVox
 Icon=/usr/bin/sunvox/icon.png
-Categories=Audio;Sound;Utilities
+Categories=Audio;AudioVideo;Utilities;
